@@ -1,0 +1,131 @@
+{
+  "devices-extras": [
+    {
+      "PutRequest": {
+        "Item": {
+          "customer_id": { "S": "foobar_customer_id" },
+          "device_id": {
+            "S": "48aed27c-9d42-4530-b4a0-61a81972b43b"
+          },
+          "profiles": {
+            "M": {
+              "non_technical": {
+                "M": {
+                  "offlineml": {
+                    "M": {
+                      "expires": { "N": "1705104000" }
+                    }
+                  }
+                }
+              },
+              "unknown": {
+                "M": {
+                  "offlineml": {
+                    "M": {
+                      "expires": { "N": "1705104000" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "customer_id": { "S": "foobar_customer_id" },
+          "device_id": {
+            "S": "11a7547d-aa99-419a-a749-ea2103570077"
+          },
+          "profiles": {
+            "M": {
+              "non_technical": {
+                "M": {
+                  "offlineml": {
+                    "M": {
+                      "expires": { "N": "1673913600" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "customer_id": { "S": "foobar_customer_id" },
+          "device_id": {
+            "S": "23c7ca3f-ad65-405a-b168-5e860605e5eb"
+          },
+          "profiles": {
+            "M": {
+              "non_technical": {
+                "M": {
+                  "offlineml": {
+                    "M": {
+                      "expires": { "N": "1705276800" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "customer_id": { "S": "foobar_customer_id" },
+          "device_id": {
+            "S": "37506039-4bb8-46e8-93d4-9972dbd74b0c"
+          },
+          "profiles": {
+            "M": {
+              "technical": {
+                "M": {
+                  "offlineml": {
+                    "M": {
+                      "expires": { "N": "1705363200" }
+                    }
+                  }
+                }
+              },
+              "non_technical": {
+                "M": {
+                  "offlineml": {
+                    "M": {
+                      "expires": { "N": "1705363200" }
+                    }
+                  }
+                }
+              },
+              "unknown": {
+                "M": {
+                  "offlineml": {
+                    "M": {
+                      "expires": { "N": "1705363200" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "customer_id": { "S": "foobar_customer_id" },
+          "device_id": { "S": "5b3dae00-2f36-4454-b9e3-f8e5c4449ccd" }
+        }
+      }
+    }
+  ]
+}

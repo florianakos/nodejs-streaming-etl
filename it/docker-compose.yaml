@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+  dynamodb:
+    build:
+      context: dynamodb
+    ports:
+      - ${DYNAMO_PORT}:8000
+    working_dir: /home/dynamodblocal
+
+  postgres:
+    image: postgres:15.4
+    depends_on:
+      - dynamodb
+    ports:
+      - ${DB_PORT}:5432
+    volumes:
+      - ./postgres:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_DB: test-db
+      POSTGRES_USER: test-user
+      POSTGRES_HOST_AUTH_METHOD: trust

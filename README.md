@@ -1,2 +1,7 @@
 # nodejs-streaming-etl
-A repo shocasing use of NodeJS streams to perform an ETL migration of data from one database to another.
+
+A repo showcasing the use of native Node.js streams to perform an ETL migration of data 
+from a NoSQL database (DynamoDB) to a SQL database (Postgres).
+
+TODO:...
+

@@ -1,0 +1,48 @@
+{
+  "name": "nodejs-streaming-etl",
+  "version": "1.0.0",
+  "description": "A repo showcasing use of NodeJS streams to perform an ETL migration of data from one database to another",
+  "prettier": {
+    "arrowParens": "avoid",
+    "singleQuote": true,
+    "overrides": [
+      { "files": [ "*.js", "*.ts" ], "options": { "tabWidth": 4 } },
+      { "files": [ "*.json" ], "options": { "tabWidth": 2 } }
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write ./src ./it --ignore-path ../.gitignore",
+    "lint": "eslint",
+    "test": "npm audit --omit=dev && npm run format && npm run lint && npm run jest",
+    "jest": "DOTENV_CONFIG_PATH=./it/.test.env jest"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.515.0",
+    "@aws-sdk/lib-dynamodb": "^3.515.0",
+    "@aws-sdk/rds-signer": "^3.515.0",
+    "@aws-sdk/util-dynamodb": "^3.515.0",
+    "knex": "^3.1.0",
+    "pg": "^8.11.3",
+    "pino": "^8.19.0",
+    "ramda": "^0.29.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts": "^20.1.1",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.10",
+    "@types/ramda": "^0.29.10",
+    "@types/uuid": "^9.0.8",
+    "aws-sdk-client-mock": "^3.0.1",
+    "dotenv": "^16.4.4",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2",
+    "uuid": "^9.0.1"
+  }
+}

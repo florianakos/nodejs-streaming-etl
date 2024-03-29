@@ -1,0 +1,165 @@
+{
+  "devices": [
+    {
+      "PutRequest": {
+        "Item": {
+          "device_id": {
+            "S": "11a7547d-aa99-419a-a749-ea2103570077"
+          },
+          "customer_id": { "S": "foobar_customer_id" },
+          "domain_name": { "S": "device1.foo.bar.fi" },
+          "first_active": { "S": "2023-05-18T12:28:00.540748Z" },
+          "last_active": { "S": "2024-01-03T09:51:37.403508Z" },
+          "ipv6_addresses": {
+            "L": [
+              { "S": "fe80::9c1a:521a:bf86:7d8c" },
+              { "S": "fe80::be91:4a73:e767:1fd9" },
+              { "S": "fe80::df7a:27ab:a588:1acc" },
+              { "S": "fe80::f1b9:7081:3a4f:cbf5" },
+              { "S": "fe80::faa5:f25d:6a54:c037" }
+            ]
+          },
+          "ipv4_addresses": {
+            "L": [
+              { "S": "10.128.52.76" },
+              { "S": "10.191.45.26" },
+              { "S": "169.254.152.138" },
+              { "S": "169.254.177.66" },
+              { "S": "169.254.191.40" },
+              { "S": "169.254.81.6" }
+            ]
+          },
+          "tags": {
+            "M": {
+              "i:department": { "S": "Sales" },
+              "i:hostname": { "S": "device1.foo.bar.fi" }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "device_id": {
+            "S": "23c7ca3f-ad65-405a-b168-5e860605e5eb"
+          },
+          "customer_id": { "S": "foobar_customer_id" },
+          "domain_name": { "S": "device2.foo.bar.fi" },
+          "first_active": { "S": "2023-04-24T07:38:12.496907Z" },
+          "last_active": { "S": "2024-01-03T09:51:08.273133Z" },
+          "ipv6_addresses": {
+            "L": [
+              { "S": "fd32:ef47:151a:600e:c51b:e6d1:6414:c06a" },
+              { "S": "fd32:ef47:151a:600e:e012:611b:ff21:7e54" },
+              { "S": "fe80::2b74:5a51:589b:d57c" },
+              { "S": "fe80::3d37:f664:ecae:434b" },
+              { "S": "fe80::4152:5507:9a02:3762" },
+              { "S": "fe80::8b55:3378:4782:31ed" },
+              { "S": "fe80::92f6:e793:2441:204d" },
+              { "S": "fe80::f3df:17b8:129d:b4e2" },
+              { "S": "fe80::f871:2fae:8e80:77a9" }
+            ]
+          },
+          "ipv4_addresses": {
+            "L": [
+              { "S": "10.191.80.172" },
+              { "S": "169.254.133.190" },
+              { "S": "169.254.145.5" },
+              { "S": "169.254.202.103" },
+              { "S": "169.254.68.88" },
+              { "S": "192.168.137.1" },
+              { "S": "192.168.181.1" },
+              { "S": "192.168.186.1" },
+              { "S": "192.168.50.66" }
+            ]
+          },
+          "tags": {
+            "M": {
+              "i:department": { "S": "CustomerSupport" },
+              "i:hostname": { "S": "device2.foo.bar.fi" }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "device_id": {
+            "S": "37506039-4bb8-46e8-93d4-9972dbd74b0c"
+          },
+          "customer_id": { "S": "foobar_customer_id" },
+          "domain_name": { "S": "device3.foo.bar.fi" },
+          "first_active": { "S": "2023-07-11T11:55:20.947385Z" },
+          "last_active": { "S": "2023-12-29T04:08:36.308940Z" },
+          "ipv6_addresses": { "L": [] },
+          "ipv4_addresses": { "L": [{ "S": "10.191.45.54" }] },
+          "tags": {
+            "M": {
+              "i:department": { "S": "Legal" },
+              "i:hostname": { "S": "device3.foo.bar.fi" }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "device_id": {
+            "S": "48aed27c-9d42-4530-b4a0-61a81972b43b"
+          },
+          "customer_id": { "S": "foobar_customer_id" },
+          "domain_name": { "S": "device4.foo.bar.fi" },
+          "first_active": { "S": "2023-04-27T11:16:08.229468Z" },
+          "last_active": { "S": "2024-01-03T09:52:19.963093Z" },
+          "ipv6_addresses": {
+            "L": [
+              { "S": "fe80::6a3c:1ec2:37a8:41b1" },
+              { "S": "fe80::85ab:8b35:5c00:a97c" },
+              { "S": "fe80::9976:ee06:3388:8a0c" },
+              { "S": "fe80::9ba8:f428:cfa4:53bc" }
+            ]
+          },
+          "ipv4_addresses": {
+            "L": [
+              { "S": "10.191.108.115" },
+              { "S": "10.73.18.10" },
+              { "S": "169.254.16.240" },
+              { "S": "169.254.164.97" },
+              { "S": "169.254.39.49" }
+            ]
+          },
+          "tags": {
+            "M": {
+              "i:department": { "S": "IT" },
+              "i:hostname": { "S": "device4.foo.bar.fi" }
+            }
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "device_id": {
+            "S": "5b3dae00-2f36-4454-b9e3-f8e5c4449ccd"
+          },
+          "customer_id": { "S": "foobar_customer_id" },
+          "domain_name": { "S": "device5.foo.bar.fi" },
+          "first_active": { "S": "2022-09-07T11:59:17.321012Z" },
+          "last_active": { "S": "2024-01-03T09:55:44.703715Z" },
+          "ipv6_addresses": { "L": [] },
+          "ipv4_addresses": { "L": [{ "S": "10.16.34.88" }] },
+          "tags": {
+            "M": {
+              "i:department": { "S": "GLT" },
+              "i:hostname": { "S": "device5.foo.bar.fi" }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
