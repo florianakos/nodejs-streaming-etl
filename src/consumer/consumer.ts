@@ -144,9 +144,4 @@ export class Consumer extends Writable {
             callback(new Error('Unknown error in consumer'));
         }
     }
-
-    // Use this method to await the completion of the writable stream
-    async finished() {
-        return new Promise(resolve => this.on('finish', resolve));
-    }
 }
